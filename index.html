@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Exercice AJAX</title>
+    <link type="text/css" rel="stylesheet" href= "style.css">
+    <link type="text/css" rel="stylesheet" href="fontawesome/css/all.css">
+   <!-- 
+     <link type="text/css" rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <script src="fontawesome/js/fontawesome.min.js"></script>
+    -->
+    <script src="fontawesome/js/all.js"></script>
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/main.js"></script>
+    
+  </head>
+  <body>
+    <h1><i class="fas fa-flask"></i> Exercice AJAX</h1>
+    <div class= "blueBorder">
+      <textarea id="story" name="story" rows="1" cols="30">Résultats...</textarea>
+        
+    </div>
+    <form class="blueBorder">
+      <p><i class="fas fa-question-circle"></i> Votre Choix</p>
+      <input type="radio" id="contenuHTML" name="cinema" value="1">
+      <label for="contenuHTML">Récupérer un contenu HTML du serveur</label>
+      </br>
+      <input type="radio" id="contenuJSON" name="cinema" value="2">
+      <label for="contenuJSON">Récupérer un contenu JSON du serveur</label>
+      </br>
+      <input type="radio" id="contenuFILMS" name="cinema" value="3">
+      <label for="contenuFILMS">Récupérer les films</label>
+    </br>
+      </br>
+      <input type="submit" value="Exécuter" id="submitButton">
+    </form>
+  </body>
+</html>

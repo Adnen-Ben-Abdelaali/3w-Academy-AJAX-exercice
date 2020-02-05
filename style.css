@@ -1,0 +1,25 @@
+
+body {
+  background-color: #e6ffff;
+}
+
+h1 {
+  color: red;
+}
+
+
+.blueBorder {
+  border: 2px blue solid;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p {
+  margin-top: -32px;
+  margin-left: 27px;
+  color :blue;
+  background-color: #e6ffff; 
+  width: 7%;
+}
