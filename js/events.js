@@ -16,26 +16,47 @@ function onClickExecute(event)
     alert(radioChoice);
 
     //récupération des données à partir du choix de l'utilisateur 
-    if(radioChoice == "1") {
-        //console.log("hello");
-        $.get("php/scriptImporterHTML.php", function(response) {
-           
-            $("#target").html(response);
+   
+    switch(radioChoice) {
+        case "1":
+            $.get("php/scriptImporterHTML.php", function(response) {
+                 $("#target").html(response);
+            });
+            break;
 
-        });
-    }else if(radioChoice == "2") {
+        case "2":
+            $.get("php/scriptImporterJSON.php", function(response) {
+                $("#target").html(response);
+            });
+            break;
 
-        $.get("php/scriptImporterJSON.php", function(response) {
-            $("#target").html(response);
-        });
+        case "3":
+            $.get("php/scriptImporterFilms.php", function(response) {
+                $("#target").html(response);
+            });
+            break;
 
-    }else if(radioChoice == "3") {
+        case "4":
+            $.get("php/scriptImporterFilmsJSON.php",  function(response) {
+                $("#target").html(response);
+            });
+            break;
 
-        $.get("php/scriptImporterFilms.php", function(response) {
-            $("#target").html(response);
-        });
+        case "5":
+            $.get("php/", function(response) {
+                $("#target").html(response);
+            });
+            break;
+            
+        case "6":
+            $.get("php/", function(response) {
+                $("#target").html(response);
+            });
+            break;
+
+        default:
+            alert("ereeur aucune valeur valable n'a été choisie.");
     }
-
     
 
 
