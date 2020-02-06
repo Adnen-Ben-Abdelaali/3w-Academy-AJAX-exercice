@@ -6,5 +6,5 @@
 
 $(function()
 {
-    $('#run').on('click', onClickExecute);
-});
+    $('input').on('click', onClickExecute);
+}); 

@@ -43,13 +43,13 @@ function onClickExecute(event)
             break;
 
         case "5":
-            $.get("php/", function(response) {
+            $.get("php/scriptImporterEmployeesJSON.php", function(response) {
                 $("#target").html(response);
             });
             break;
             
         case "6":
-            $.get("php/", function(response) {
+            $.get("php/scriptImporterEmployeesHTML.php", function(response) {
                 $("#target").html(response);
             });
             break;
